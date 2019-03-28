@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Card } from '@material-ui/core';
 import CardActions from '@material-ui/core/CardActions';
@@ -19,11 +18,6 @@ class QuoteMachine extends Component {
     this.shareQuote = this.shareQuote.bind(this);
     this.endPoint = `http://loremricksum.com/api/?paragraphs=${this.state.numQuotes}&quotes=${2}`
     
-    const styles = theme => ({
-      button: {
-        margin: theme.spacing.unit,
-      },
-    });
   }
 
   pullQuote () {
@@ -47,7 +41,7 @@ class QuoteMachine extends Component {
   render(){
     return (
       <div>
-        <img id='rick' src={require("./happyRick.png")}></img>
+        <img id='rick' src={require("./happyRick.png")} alt="Happy Rick"></img>
         <h1 id="header">Quote Machineeeeeeee!</h1>
         <Card className="card" >
           <CardActions className="button">
@@ -69,7 +63,7 @@ class QuoteMachine extends Component {
           </CardActions >
         </Card>}
         <br/>
-        <img id='rick2' src={require("./madRick.png")}/>
+        <img id='rick2' src={require("./madRick.png")} alt="Mad Rick"/>
       </div>
     )
   }

@@ -1,5 +1,46 @@
 .App {
   text-align: center;
+  display: inline-block;
+  background-color: #9494b8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#tweet-quote {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  backgroundColor: #009999;
+}
+
+#header {
+  color: #99e6ff;
+}
+
+#rick {
+  width: 500px;
+  height: 500px;
+}
+
+#rick2 {
+  width: 500px;
+  height: 500px;
+}
+
+.card {
+  text-align: center;
+  font-style: italic;
+  align-items: center;
+  justify-content: center;
+  width: 500px
 }
 
 .App-logo {
